@@ -1,0 +1,1 @@
+web: gunicorn DevVeterinaria.wsgi --log-file -
