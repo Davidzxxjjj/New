@@ -5,11 +5,8 @@ from django.db import models
 class Mascota(models.Model):
     pk_mascota = models.AutoField(primary_key=True, null=False, blank=False)
     nombre = models.CharField(max_length=50, null=False, blank=False)
-    edad = models.CharField(max_length=50, null=False, blank=False)
-    raza = models.CharField(max_length=50, null=False, blank=False)
-    estado = models.CharField(max_length=50, null=False, blank=False)
-    tipo = models.CharField(max_length=50, null=False, blank=False)
-    img = models.URLField(max_length=8000, blank=False, null=False, default='https://i.postimg.cc/Hk439n1v/no-found.jpg')
+    edad = models.CharField(max_length=20, null=False, blank=False)
+    raza = models.CharField(max_length=30, null=False, blank=False)
 
     class Meta:
         verbose_name = 'Mascota'

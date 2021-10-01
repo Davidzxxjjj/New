@@ -10,7 +10,7 @@ class resourceMascota(resources.ModelResource):
 
 class AdminMascota(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['nombre']
-    list_display = ['edad','raza','tipo','img']
+    list_display = ['edad','raza','nombre']
     resource_class = resourceMascota
 
 admin.site.register(Mascota, AdminMascota)
@@ -23,7 +23,7 @@ class resourceCliente(resources.ModelResource):
 
 class AdminCliente(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['nombre']
-    list_display = ['edad']
+    list_display = ['edad', 'nombre','fk_Mascota']
     resource_class = resourceCliente
 
 admin.site.register(Cliente, AdminCliente)
@@ -36,6 +36,7 @@ class resourceCita(resources.ModelResource):
 
 class AdminCita(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['fecha']
+    list_display = ['fecha', 'fk_Cliente', 'fk_Mascota']
     resource_class = resourceCita
 
 admin.site.register(Cita, AdminCita)

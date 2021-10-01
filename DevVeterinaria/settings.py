@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'd6^^0)fw(%=r@x+7*(%_#mvngdij=xvetgr&n+n(971q68t&5)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.storage',
+    'apps.web',
+    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'DevVeterinaria.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,6 +75,17 @@ WSGI_APPLICATION = 'DevVeterinaria.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+DATABASES = {
+    'default': {
+      'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'veterinaria',
+        'USER': 'Dav',
+        'PASSWORD': '1234',
+        'HOST': '127.0.0.1',
+        'PORT': 5432
+    }
+ }
+
 """
 DATABASES = {
     'default': {
@@ -81,6 +93,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+"""
 """
 import dj_database_url
 from decouple import config
@@ -90,7 +103,7 @@ DATABASES = {
         default=config('DATABASE_URL')
     )
 }
-
+"""
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 

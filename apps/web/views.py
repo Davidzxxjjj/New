@@ -1,18 +1,49 @@
 from django.shortcuts import render
 from .models import *
 # Create your views here.
-
 def index(request):
-    return render(request, 'index.html')
+    allMascota = Mascota.objects.all()
+    return render (request, 'index.html',{'allMascota':allMascota})
 
-def mascota(request):
-    allmascota = Mascota.objects.all()
-    return render(request, 'mascota.html',{'allmascota':allmascota})
+def about(request):
+    return render(request, 'about.html')
 
-def dueños(request):
-    alldueños = Cliente.objects.all()
-    return render(request, 'dueños.html',{'alldueños':alldueños})
+def blog(request):
+    return render(request, 'blog.html')
 
-def citas(request):
-    allcitas = Cita.objects.all()
-    return render(request, 'citas.html',{'allcitas':allcitas})
+def blogsingle(request):
+    return render(request, 'blog-single.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def gallery(request):
+    return render(request, 'gallery.html')
+
+def main(request):
+    return render(request, 'main.html')
+
+def pricin(request):
+    return render(request, 'pricing.html')
+
+def services(request):
+    return render(request, 'services.html')
+
+def vet(request):
+    return render(request, 'vet.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,423 +1,464 @@
-{%load staticfiles%}
+{%load static%}
 <!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Veterinaria </title>
-    <meta name="description" content="" />
-    <meta name="author" content="template">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-    Matrix Template
-    http://www.templatemo.com/tm-405-matrix
-    -->
-    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
-    <link href="{%static 'css/font-awesome.min.css'%}" rel="stylesheet">
-    <link rel="stylesheet" href="{%static 'css/templatemo_misc.css'%}">
-   	<link type="text/css" rel="stylesheet" href="{%static 'css/easy-responsive-tabs.css'%}" />
-    <link href="{%static 'css/template_style.css'%}" rel="stylesheet">
+    <title>Veterinaria Fuentes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<script src="{%static 'js/jquery-1.10.2.min.js'%}"></script>
-	<script src="{%static 'js/jquery.lightbox.js'%}"></script>
-	<script src="{%static 'js/template_custom.js'%}"></script>
-    <script src="{%static 'js/easyResponsiveTabs.js'%}" type="text/javascript"></script>
-     <script>
-    function showhide()
-    {
-        var div = document.getElementById("newpost");
-		if (div.style.display !== "none")
-		{
-			div.style.display = "none";
-		}
-		else
-		{
-			div.style.display = "block";
-		}
-    }
-  </script>
-  	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{%static 'css/animate.css'%}">
+
+    <link rel="stylesheet" href="{%static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{%static 'css/magnific-popup.css'%}">
+
+
+    <link rel="stylesheet" href="{%static 'css/bootstrap-datepicker.css'%}">
+    <link rel="stylesheet" href="{%static 'css/jquery.timepicker.css'%}">
+
+    <link rel="stylesheet" href="{%static 'css/flaticon.css'%}">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
   </head>
   <body>
-    	<!-- logo start -->
-    <div class="logocontainer">
-    	<div class="row">
-        	<h1><a href="#">Veterinaria</a></h1>
-            <div class="clear"></div>
-            <div class="templatemo_smalltitle">Cuidando a tus Mascotas</div>
-       </div>
-    </div>
-    <!-- logo end -->
-   <div id="menu-container" class="main_menu">
-   <!-- homepage start -->
-    <div class="content homepage" id="menu-1">
-  	<div class="container">
-          	<div class="col-md-3 col-sm-6 templatemo_leftgap">
-            	<div class="templatemo_mainservice templatemo_botgap">
-                	<div class="templatemo_link"><a class="show-2 templatemo_page2" href="#">Servicios</a></div>
 
-                </div>
-                <div class="templatemo_mainimg"><img src="{%static 'images/cat3.jpg'%}" alt="home img 01"></div>
-            </div>
-            <div class="col-md-3 col-sm-6 templatemo_leftgap">
-            	<div class="templatemo_mainimg templatemo_botgap templatemo_portfotopgap"><img src="{%static 'images/doctor.jpg'%}" alt="home img 02"></div>
-                <div class="templatemo_mainportfolio">
-                      <div class="templatemo_link"><a class="show-3 templatemo_page3" href="#">Pacientes</a></div>
-
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 templatemo_leftgap">
-            	<div class="templatemo_maintesti templatemo_botgap templatemo_topgap">
-                	<div class="templatemo_link"><a class="show-4 templatemo_page4" href="#">Reseñas</a></div>
-                </div>
-                <div class="templatemo_mainimg"><img src="{%static 'images/dog3.jpg'%}" alt="home img 03"></div>
-            </div>
-            <div class="col-md-3 col-sm-6 templatemo_leftgap">
-            	<div class="templatemo_mainimg templatemo_botgap templatemo_topgap">
-             	   <img src="{%static 'images/dog2.jpg'%}" alt="home img 04">
-                </div>
-                <div class="templatemo_mainabout templatemo_botgap">
-                	<div class="templatemo_link"><a class="show-5 templatemo_page5" href="#">Sobre Nosotros</a></div>
-                </div>
-                <div class="templatemo_maincontact">
-                	<div class="templatemo_link"><a class="show-6 templatemo_page6" href="#">Contactanos</a></div>
-                </div>
-            </div>
-    </div>
-
-   </div>
-    <!-- homepage end -->
-    <!--services start -->
-   <div class="content services" id="menu-2">
-		<div class="container">
-        	<div class="row templatemo_bordergapborder">
-            	<div class="col-md-3 col-sm-12 templatemo_leftgap">
-                	<div class="templatemo_mainimg templatemo_botgap"><img src="{%static 'images/catgat.jpg'%}" alt="service image"></div>
-                    <div class="templatemo_mainservice templatemo_botgap">
-                	<div class="templatemo_linkservice"><a class="show-1 templatemo_homeservice" href="#">Regresar</a></div>
-                </div>
-                </div>
-
-                <div class="templatemo_col37 col-sm-12 templatemo_leftgap">
-                	<div class="templatemo_graybg">
-                    <div class="templatemo_frame">
-                	<h2>Nuestros Servicos</h2>
-                    <div class="clear"></div>
-                    <p>Matrix is new metro style website template and it is available for free download. Credit goes to <a rel="nofollow" href="http://unsplash.com" target="_parent">Unsplash</a> for all images used in this template. You may contact us if you have anything.<br><br>
-                    Praesent ut vehicula lorem. Nulla nec tellus id ligula egestas luctus fringilla vel dui. Nulla quis quam eget purus aliquam molestie. Nunc ligula magna, viverra eu eros vitae, aliquam tempor nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><br>
-					Suspendisse eget laoreet nunc. Suspendisse condimentum metus neque, at adipiscing metus venenatis eu. Mauris sit amet erat laoreet, ullamcorper justo sit amet, vehicula purus. Nulla sagittis pulvinar erat, sit amet venenatis lacus fringilla vitae.<br><br>
-					Integer sit amet libero sed dui pretium tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam neque erat, euismod ut pulvinar in, bibendum eget mi. Phasellus porttitor purus sit amet condimentum mattis.</p>
-                    </div>
-               	  </div>
-              </div>
-                <div class="templatemo_col37 col-sm-12 templatemo_leftgap templatemo_topgap">
-                	<div class="templatemo_mainimg templatemo_botgap"><img src="{%static 'images/docdog.jpg'%}" alt="service image"></div>
-                </div>
-            </div>
+    <div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="mb-0 phone pl-md-2">
+							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +502 3122-1671</a>
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> davidzxxjjj2003@gmail.com</a>
+						</p>
+					</div>
+					<div class="col-md-6 d-flex justify-content-md-end">
+						<div class="social-media">
+			    		<p class="mb-0 d-flex">
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+			    		</p>
+		        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    	<a class="navbar-brand" href="index.html"><span class="flaticon-pawprint-1 mr-2"></span>Veterinaria Fuentes</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item active"><a href="{%url 'web:index.html'%}" class="nav-link">Inicio</a></li>
+	        	<li class="nav-item"><a href="{%url 'web:about.html'%}" class="nav-link">¿Que somos?</a></li>
+	        	<li class="nav-item"><a href="{%url 'web:vet.html'%}" class="nav-link">Veterinaria</a></li>
+	        	<li class="nav-item"><a href="{%url 'web:services.html'%}" class="nav-link">Servicios</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    <div class="hero-wrap js-fullheight" style="background-image: url({%static 'images/bg_1.jpg'%});" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-11 ftco-animate text-center">
+          	<h1 class="mb-4">El bienestar de tu mascota es lo mas importante</h1>
+            <p><a href="https://misanimales.com/cuidados-para-el-bienestar-de-tu-mascota/" class="btn btn-primary mr-md-4 py-3 px-4">Saber más <span class="ion-ios-arrow-forward"></span></a></p>
+          </div>
         </div>
-     </div>
+      </div>
+    </div>
 
-    <!-- services end -->
-
-	<!-- portfilio start -->
-    <div class="portfolio" id="menu-3" style="display: none;" >
+    <section class="ftco-section bg-light ftco-no-pt ftco-intro">
     	<div class="container">
-          	<div class="col-md-3 col-sm-6 templatemo_leftgap">
-       	      <div class="templatemo_insideportfolio templatemo_botgap">
-               	  <div class="templatemo_portfoliotext">
-                	<h2>Portafolio</h2>
-                    <div class="clear"></div>
-                    Suspendisse condimentum metus neque, at adipiscing metus venenatis eu. Mauris sit amet erat laoreet, ullamcorper justo sit amet, vehicula purus. Nulla sagittis pulvinar erat, sit amet venenatis lacus fringilla vitae.</div>
+    		<div class="row">
+          <div class="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
+            <div class="d-block services active text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-blind"></span>
               </div>
-            	<div class="templatemo_portfolioback">
-                	<div class="templatemo_link"><a class="show-1 templatemo_homeportfolio" href="#">Regresar</a></div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 templatemo_leftgap">
-                        <div class="templatemo_botgap templatemo_portfotopgap gallery-item">
-							<img src="{%static 'images/portfolio/dog4.jpg'%}" alt="gallery 1">
-								<a href="{%url 'webveterinaria:mascota'%}">Mascotas
-                                    <div class="overlay">
-                                    </div>
-                                </a>
-						</div>
-            </div>
-            <div class="col-md-3 col-sm-6 templatemo_leftgap">
-				<div class="templatemo_botgap templatemo_topgap gallery-item">
-             	  	 <img src="{%static 'images/portfolio/dog5.jpg'%}" alt="gallery 4">
-								<a href="{%url 'webveterinaria:dueños'%}">Dueños
-                                    <div class="overlay">
-                                    </div>
-                                </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 templatemo_leftgap">
-				<div class="templatemo_botgap templatemo_topgap gallery-item">
-             	  	 <img src="{%static 'images/portfolio/dog6.jpg'%}" alt="gallery 7">
-								<a href="{%url 'webveterinaria:citas'%}">Citas
-                                    <div class="overlay">
-                                    </div>
-                                </a>
-                </div>
-            </div>
-    </div>
-    </div>
-	 <!-- portfolio end -->
-	<!-- testimonial start -->
-    <div class="content testimonial" id="menu-4">
-    		    	<div class="container">
-        	<div class="row templatemo_bordergapborder">
-            <!--vertical Tabs-->
-      		<div id="cmt">
-            <div class="col-md-3 col-sm-12 templatemo_leftgap_about">
-            <ul class="resp-tabs-list templatemo_testitab">
-                <li>Testimonios</li>
-                <li>Premios especiales</li>
-                <li>Reconocimientos</li>
-            </ul>
-            <div class="templatemo_aboutlinkwrapper">
-     		<div class="templatemo_link"><a class="show-1 templatemo_hometestimonial" href="index.html">Volver</a></div>
-            </div>
-            </div>
-            <div class="resp-tabs-container templatemo_testicontainer">
-                <div>
-                	<div class="templatemo_col50 templatemo_rightgap_about">
-                    	<div class="templatemo_graybg templatemo_botgap">
-                         <div class="templatemo_frame">
-                    	<h2>Testimonios</h2>
-                    	<p>Aliquam accumsan, mauris ut hendrerit vehicula, elit massa facilisis nulla, ut auctor risus massa non elit. Vestibulum commodo, mauris quis accumsan pretium, mauris erat porttitor nibh, a eleifend ante elit eu velit. Sed molestie fringilla tellus ut venenatis. Nam ut eros augue. Nullam scelerisque enim eget ornare rutrum. Proin dignissim eget arcu a posuere. Sed ut lacinia enim, et adipiscing purus.<br><br>
-						Etiam vitae elit euismod dui <a href="#">elementum</a> dapibus sed eleifend purus. Maecenas eleifend arcu arcu, vitae interdum erat sollicitudin vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="templatemo_col50 templatemo_leftgap templatemo_botgap"><img src="{%static 'images/templatemo_testimonial1.jpg'%}" alt="testimonial image"></div>
-                </div>
-                <div>
-                	<div class="templatemo_col50 templatemo_rightgap_about">
-                    	<div class="templatemo_graybg templatemo_botgap">
-                        <div class="templatemo_frame">
-                    	<h2>Premios especiales</h2>
-                    	<p>Suspendisse eu nisl sit amet purus varius pellentesque quis id mi. Ut ac sodales massa. Suspendisse placerat malesuada ligula, et bibendum justo convallis in. Duis imperdiet nibh non sodales porttitor. Donec <a href="#">pellentesque</a> mollis ante, a bibendum turpis congue at. Maecenas ligula augue, pellentesque ac porttitor eu, facilisis at nisl.<br><br>
-                        Duis nulla leo, posuere sit amet nibh nec, lacinia ullamcorper turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam aliquam facilisis metus, eget semper nisi mollis blandit. Vestibulum metus neque, vestibulum nec tempus vitae, viverra sit amet odio.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="templatemo_col50 templatemo_leftgap templatemo_botgap"><img src="{%static 'images/templatemo_testimonial2.jpg'%}" alt="testimonial image"></div>
-                </div>
-                <div>
-                	<div class="templatemo_col50 templatemo_rightgap_about">
-                    	<div class="templatemo_graybg templatemo_botgap">
-                        <div class="templatemo_frame">
-                    	<h2>Reconocimientos</h2>
-                    	<p>Quisque convallis neque eu nunc dictum, eget vehicula ipsum rhoncus. Fusce a egestas mauris, dapibus fermentum ligula. Donec ac scelerisque sem. Morbi mollis augue non nunc tincidunt, sit amet volutpat nisi commodo. <a href="#">Suspendisse</a> justo nisl, fringilla vehicula augue ut, mattis mattis lacus.<br><br>
-                        Maecenas at urna non dolor sagittis suscipit. Nulla lacinia orci eu felis cursus ultricies. Vestibulum non leo feugiat, posuere mi sit amet, tristique nulla. Suspendisse dui est, sagittis ac pulvinar vel, venenatis ac nisi. Maecenas ac purus viverra, tincidunt dui at, rutrum lorem.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="templatemo_col50 templatemo_leftgap templatemo_botgap"><img src="{%static 'images/templatemo_testimonial3.jpg'%}" alt="testimonial image"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 templatemo_leftgap templatemo_aboutlinkwrapper1">
-                	<div class="templatemo_aboutback templatemo_botgap">
-                	<div class="templatemo_link"><a class="show-1 templatemo_hometestimonial" href="#">Go Back</a></div>
-                </div>
-                </div>
-    </div>
-            </div>
-
-    </div>
-	 <!-- testimonial end -->
-     <!-- about start -->
-    <div class="content about" id="menu-5">
-    	<div class="container">
-        	<div class="row templatemo_bordergapborder">
-            <!--vertical Tabs-->
-      		<div id="ab">
-            <div class="col-md-3 col-sm-12 templatemo_leftgap_about">
-            <ul class="resp-tabs-list templatemo_tab">
-                <li>Nuestro equipo</li>
-                <li>Nuestra historia</li>
-                <li>Nuestra vision</li>
-            </ul>
-            <div class="templatemo_aboutlinkwrapper">
-     		<div class="templatemo_link"><a class="show-1 templatemo_homeabout" href="#">Regresar</a></div>
-            </div>
-            </div>
-            <div class="resp-tabs-container templatemo_aboutcontainer">
-                <div>
-                	<div class="templatemo_col50 templatemo_rightgap_about">
-                    	<div class="templatemo_graybg templatemo_botgap">
-                         <div class="templatemo_frame">
-                    	<h2>Nuestro equipo</h2>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.<br><br>
-                        Quisque vitae malesuada risus. Quisque at consequat erat. Cras sed fermentum ipsum. Maecenas aliquet commodo dui vel dapibus. Cras quis mi non nisl posuere vestibulum vitae id ipsum. Pellentesque mollis sem non facilisis aliquam. Curabitur eu fermentum odio.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="templatemo_col50 templatemo_leftgap templatemo_botgap"><img src="{%static 'images/templatemo_about.jpg'%}" alt="about image"></div>
-                </div>
-                <div>
-                	<div class="templatemo_col50 templatemo_rightgap_about">
-                    	<div class="templatemo_graybg templatemo_botgap">
-                        <div class="templatemo_frame">
-                    	<h2>Nuestra historia</h2>
-                    	<p>Pellentesque id ullamcorper justo. Vestibulum imperdiet justo vitae lacus pulvinar, ut tempus lacus porta. Nulla eget tellus elit. Proin ipsum mi, dictum nec massa quis, malesuada feugiat nisl. Nam tempus at eros ut volutpat.<br><br>
-                        Feel free to download our templates for your websites. Aenean consectetur, libero non dapibus posuere, odio quam fringilla diam, et rutrum felis tortor gravida massa. Aenean tincidunt dolor id augue consectetur, eget suscipit lectus facilisis. Integer eleifend augue non euismod viverra.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="templatemo_col50 templatemo_leftgap templatemo_botgap"><img src="{%static 'images/templatemo_team.jpg'%}" alt="history image"></div>
-                </div>
-                <div>
-                	<div class="templatemo_col50 templatemo_rightgap_about">
-                    	<div class="templatemo_graybg templatemo_botgap">
-                        <div class="templatemo_frame">
-                    	<h2>Nuestra Vision</h2>
-                    	<p>We provide <a href="#">mobile website templates</a> for everyone. Suspendisse eget iaculis velit, at ullamcorper justo. Nulla mi elit, mollis sit amet eros eget, tempus accumsan diam. Nunc blandit nisl eu massa ultrices, eget adipiscing purus posuere. Maecenas sapien libero, tempor eu pulvinar in, blandit vitae sem.<br><br>
-                        Vestibulum pellentesque turpis orci, sit amet varius velit aliquet id. In fringilla nisi id lorem scelerisque, vitae elementum quam porta. Vestibulum bibendum egestas velit, id mollis lacus euismod nec. Duis fringilla dui sit amet felis eleifend auctor. Duis rhoncus, nulla eget egestas consequat, justo purus elementum ipsum, ut blandit quam libero sit amet metus.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="templatemo_col50 templatemo_leftgap templatemo_botgap"><img src="{%static 'images/templatemo_vision.jpg'%}" alt="vision image"></div>
-                </div>
-            </div>
-        </div>
-			<div class="col-sm-12 templatemo_leftgap templatemo_aboutlinkwrapper1">
-                	<div class="templatemo_aboutback templatemo_botgap">
-                	<div class="templatemo_link"><a class="show-1 templatemo_homeabout" href="#">Go Back</a></div>
-                </div>
-                </div>
-    </div>
-            </div>
-    </div>
-    <!-- about end -->
-    <!-- contact start -->
-    <div class="content contact" id="menu-6">
-    	<div class="container">
-        	<div class="row templatemo_bordergapborder">
-            	<div class="col-md-3 col-sm-12 templatemo_leftgap">
-                	<div class="templatemo_mainimg templatemo_botgap"><img src="{%static 'images/templatemo_contact1.jpg'%}" alt="contact image"></div>
-                    <div class="templatemo_maincontact templatemo_botgap">
-                	<div class="templatemo_linkcontact"><a class="show-1 templatemo_homecontact" href="#">Regresar</a></div>
-                </div>
-                </div>
-
-                <div class="templatemo_col37 col-sm-12 templatemo_leftgap">
-                	<div class="templatemo_graybg templatemo_paddinggap">
-                	<h2>Cantactenos</h2>
-                    <div class="clear"></div>
-                    	<form role="form">
-                          <div class="templatemo_form">
-                            <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Tú Nombre" maxlength="40">
-                          </div>
-                          <div class="templatemo_form">
-                            <input name="email" type="text" class="form-control" id="email" placeholder="Tú Email" maxlength="40">
-                          </div>
-                           <div class="templatemo_form">
-                            <input name="subject" type="text" class="form-control" id="subject" placeholder="Tema" maxlength="60">
-                          </div>
-                          <div class="templatemo_form">
-                              <textarea name="message" class="form-control" id="message" placeholder="Tú mensaje"></textarea>
-                          </div>
-                          <div class="templatemo_form"><button type="button" class="btn btn-primary">Enviar</button></div>
-            			</form>
-               	  </div>
+              <div class="media-body">
+                <h3 class="heading">Caminata de un perro</h3>
+                <p>La necesidad del ejercicio en una mascota es fundamental para su pleno desarrollo en el cual es indispensable para que la mascota se sienta tanto feliz como desestrezada</p>
+                <a href="{%url 'web:about.html'%}" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
               </div>
-                <div class="templatemo_col37 col-sm-12 templatemo_leftgap templatemo_topgap">
-                	<div class="templatemo_graybg templatemo_paddinggap">
-                    	<h2>Nuestra ubicacion</h2>
-                        <div class="clear"></div>
-                        <div class="templatemo_contactmap">
-		    					<div id="templatemo_map"></div>
-        		        </div>
-                        <div class="templatemo_address">
-                         	24-66 Nam auctor elementum dolor 10220<br>
-                       	    Tel: 010-020-0340 Email: info@company.com
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
+            <div class="d-block services text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-dog-eating"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Alimentacion balanceada</h3>
+                <p>Una buena alimentacion sirve para que tu mascota no sufra de sobrepeso y pueda afrontar la vejez de buena manera</p>
+                <a href="{%url 'web:about.html'%}" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
+            <div class="d-block services text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+            		<span class="flaticon-grooming"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Estilo</h3>
+                <p>El pelaje para unos perros es fundamental para su vida ya que algunos tienen exceso de este mismo y por eso debe ser recortado</p>
+                <a href="{%url 'web:about.html'%}" class="btn-custom d-flex align-items-center justify-content-center"><span class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+              </div>
+            </div>
+          </div>
         </div>
-    <!-- service_area_start  -->
+    	</div>
+    </section>
+
+
+
+    <section class="ftco-counter" id="section-counter">
+    	<div class="container">
+				<div class="row">
+          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+              </div>
+              <div class="text">
+              	<span>Clientes</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="8">0</strong>
+              </div>
+              <div class="text">
+              	<span>Profesionales</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="40">0</strong>
+              </div>
+              <div class="text">
+              	<span>Mascotas Vacunadas</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+              </div>
+              <div class="text">
+              	<span>Cortes de pelo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+    <section class="ftco-section testimony-section" style="background-image: url({%static 'images/bg_2.jpg'%});">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2></h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+            <!-- service_area_start  -->
     <div>
         <div>
 
+            </div>
         </div>
+        <br>
+        <br>
+        <h1 align="centrer">tabla de mascotas</h1>
+        <br>
+        <br>
+      <table class="table">
+          {%if allMascota%}
+      <thead>
+        <tr>
+          <th scope="col">nombre</th>
+          <th scope="col">raza</th>
+          <th scope="col">edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            {%for arraydMascota in allMascota%}
+            <td>{{arraydMascota.nombre}}</td>
+            <td>{{arraydMascota.raza}}</td>
+            <td>{{arraydMascota.edad}}</td>
+        </tr>
+        {%endfor%}
+        {%endif%}
+      </tbody>
+    </table>
     </div>
-    <br>
-    <br>
-    <h1 align="centrer">tabla de mascotas</h1>
-    <br>
-    <br>
-  <table class="table">
-      {%if allmascotas%}
-  <thead>
-    <tr>
-      <th scope="col">tipo</th>
-      <th scope="col">raza</th>
-      <th scope="col">edad</th>
-      <th scope="col">estado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        {%for arraydmascotas in allmascotas%}
-        <td>{{arraydmascotas.tipo}}</td>
-        <td>{{arraydmascotas.raza}}</td>
-        <td>{{arraydmascotas.edad}}</td>
-        <td>{{arraydmascotas.estado}}</td>
-    </tr>
-    {%endfor%}
-    {%else%}
-    <br><h1>no existen mascotas</h1><br/>
-    {%endif%}
-  </tbody>
-</table>
-    </div>
-        <!-- contact end -->
-    	<!-- logo start -->
-    <div class="logocontainer">
-    	<div class="row">
-            <div class="templatemo_footer">Copyright © 2021 Compañia Veterinaria</div>
-       </div>
-    </div>
-    <!-- logo end -->
-   <script type="text/javascript">
-    $(document).ready(function () {
-        $('#horizontalTab').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            closed: 'accordion', // Start closed if in accordion view
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#tabInfo');
-                var $name = $('span', $info);
+    </section>
 
-                $name.text($tab.text());
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2>Galeria de nuestras mascotas</h2>
+          </div>
+        </div>
+				<div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="work mb-4 img d-flex align-items-end" style="background-image: url({%static 'images/gallery-1.jpg'%});">
+            	<a href="{%static 'images/gallery-1.jpg'%}" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="fa fa-expand"></span>
+	    				</a>
+            	<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Cat</span>
+	              	<h2><a href="work-single.html">Gato persia</a></h2>
+	              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="work mb-4 img d-flex align-items-end" style="background-image: url({%static 'images/gallery-2.jpg'%});">
+            	<a href="{%static 'images/gallery-2.jpg'%}" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="fa fa-expand"></span>
+	    				</a>
+            	<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Dog</span>
+	              	<h2><a href="work-single.html">Chihuahua</a></h2>
+	              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="work mb-4 img d-flex align-items-end" style="background-image: url({%static 'images/gallery-3.jpg'%});">
+            	<a href="{%static 'images/gallery-3.jpg'%}" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="fa fa-expand"></span>
+	    				</a>
+            	<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Cat</span>
+	              	<h2><a href="work-single.html">Gato pelon</a></h2>
+	              </div>
+              </div>
+            </div>
+          </div>
 
-                $info.show();
+          <div class="col-md-4 ftco-animate">
+            <div class="work mb-4 img d-flex align-items-end" style="background-image: url({%static 'images/gallery-4.jpg'%});">
+            	<a href="{%static 'images/gallery-4.jpg'%}" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="fa fa-expand"></span>
+	    				</a>
+            	<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Cat</span>
+	              	<h2><a href="work-single.html">British Gato</a></h2>
+	              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="work mb-4 img d-flex align-items-end" style="background-image: url({%static 'images/gallery-5.jpg'%});">
+            	<a href="{%static 'images/gallery-5.jpg'%}" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="fa fa-expand"></span>
+	    				</a>
+            	<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Dog</span>
+	              	<h2><a href="work-single.html">Beagle</a></h2>
+	              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="work mb-4 img d-flex align-items-end" style="background-image: url({%static 'images/gallery-6.jpg'%});">
+            	<a href="{%static 'images/gallery-6.jpg'%}" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="fa fa-expand"></span>
+	    				</a>
+            	<div class="desc w-100 px-4">
+	              <div class="text w-100 mb-3">
+	              	<span>Dog</span>
+	              	<h2><a href="work-single.html">Pug</a></h2>
+	              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
 
-            }
-        });
+    <section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb img" style="background-image: url({%static 'images/bg_3.jpg'%});">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row d-md-flex justify-content-end">
+    			<div class="col-md-12 col-lg-6 half p-3 py-5 pl-lg-5 ftco-animate">
+    				<h2 class="mb-4">Reserva tu consulta</h2>
+    				<form action="#" class="appointment">
+    					<div class="row">
+    						<div class="col-md-12">
+									<div class="form-group">
+			    					<div class="form-field">
+	          					<div class="select-wrap">
+	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+	                      <select name="" id="" class="form-control">
+	                      	<option value="">Selecciona el servicio</option>
+	                        <option value="">Corte de pelo</option>
+	                        <option value="">Corte de Uñas</option>
+	                        <option value="">Baños</option>
+	                        <option value="">Vacunacion primeriza</option>
+	                        <option value="">Vacunacion de vitaminas</option>
+							  <option value="">Vacunacion de enfermedades</option>
+	                      </select>
+	                    </div>
+			              </div>
+			    				</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			              <input type="text" class="form-control" placeholder="Tu nombre">
+			            </div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			              <input type="text" class="form-control" placeholder="Numero de telefono">
+			            </div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			    					<div class="input-wrap">
+			            		<div class="icon"><span class="fa fa-calendar"></span></div>
+			            		<input type="text" class="form-control appointment_date" placeholder="Fecha">
+		            		</div>
+			    				</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			    					<div class="input-wrap">
+			            		<div class="icon"><span class="fa fa-clock-o"></span></div>
+			            		<input type="text" class="form-control appointment_time" placeholder="Hora">
+		            		</div>
+			    				</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Descripcion del problema"></textarea>
+			            </div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <input type="submit" value="Enviar" class="btn btn-primary py-3 px-4">
+			            </div>
+								</div>
+    					</div>
+	          </form>
+    			</div>
+    		</div>
+    	</div>
+    </section>
 
-        $('#ab').easyResponsiveTabs({
-            type: 'vertical',
-            width: 'auto',
-            fit: true,
-        });
+     <footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Veterinaria Fuentes</h2>
+						<p>Puedes encontranos en nuestras redes sociales para mas información</p>
+						<ul class="ftco-footer-social p-0">
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Latest News</h2>
+						<div class="block-21 mb-4 d-flex">
+              <a class="img mr-4 rounded" style="background-image: url({%static 'images/image_1.jpg'%});"></a>
+              <div class="text">
+                <h3 class="heading"><a href="https://www.20minutos.es/salud/actualidad/andrea-galofre-los-perros-puede-mejorar-la-calidad-de-vida-de-jovenes-en-una-situacion-vital-complicada-4833035/">Perros que ayudan a jóvenes con causas judiciales: "El perro no te etiqueta ni le importa lo que ha pasado"</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="icon-calendar"></span> Septiembre 28, 2021</a></div>
+                  <div><a href="#"><span class="icon-person"></span> Nani F. Cores</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="block-21 mb-4 d-flex">
+              <a class="img mr-4 rounded" style="background-image: url({%static 'images/image_2.jpg'%});"></a>
+              <div class="text">
+                <h3 class="heading"><a href="https://www.20minutos.es/salud/familia/cardiopatias-mas-frecuentes-en-perros-en-que-razas-aparecen-mas-y-como-detectarlas-4836161/">Las cardiopatías más frecuentes en perros, en qué razas aparecen más y cómo detectarlas</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="icon-calendar"></span> Septiembre 29, 2021</a></div>
+                  <div><a href="#"><span class="icon-person"></span> Mercedes Borja</a></div>
+                </div>
+              </div>
+            </div>
+					</div>
+					<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+						<h2 class="footer-heading">Pagina principal</h2>
+						<ul class="list-unstyled">
+              <li><a href="{%url 'web:index.html'%}" class="py-2 d-block">Inicio</a></li>
+              <li><a href="{%url 'web:about.html'%}" class="py-2 d-block">¿Que somos?</a></li>
+              <li><a href="{%url 'web:services.html'%}" class="py-2 d-block">Servicios</a></li>
+            </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">¿Alguna pregunta?</h2>
+						<div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon fa fa-map"></span><span class="text">Zona 1, Valle del Sol, Calle3</span></li>
+                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+502 3122-1671</span></a></li>
+                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">davidzxxjjj2003@gmail.com</span></a></li>
+              </ul>
+            </div>
+					</div>
+				</div>
+				<div class="row mt-5">
+          <div class="col-md-12 text-center">
+
+            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+			</div>
+		</footer>
 
 
-		$('#cmt').easyResponsiveTabs({
-            type: 'vertical',
-            width: 'auto',
-            fit: true,
-        });
-    });
-</script>
-<!-- templatemo 405 matrix -->
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{%static 'js/jquery.min.js'%}"></script>
+  <script src="{%static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
+  <script src="{%static 'js/popper.min.js'%}"></script>
+  <script src="{%static 'js/bootstrap.min.js'%}"></script>
+  <script src="{%static 'js/jquery.easing.1.3.js'%}"></script>
+  <script src="{%static 'js/jquery.waypoints.min.js'%}"></script>
+  <script src="{%static 'js/jquery.stellar.min.js'%}"></script>
+  <script src="{%static 'js/jquery.animateNumber.min.js'%}"></script>
+  <script src="{%static 'js/bootstrap-datepicker.js'%}"></script>
+  <script src="{%static 'js/jquery.timepicker.min.js'%}"></script>
+  <script src="{%static 'js/owl.carousel.min.js'%}"></script>
+  <script src="{%static 'js/jquery.magnific-popup.min.js'%}"></script>
+  <script src="{%static 'js/scrollax.min.js'%}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{%static 'js/google-map.js'%}"></script>
+  <script src="{%static 'js/main.js'%}"></script>
+
+
+    
   </body>
 </html>
